@@ -198,7 +198,8 @@ button {
 
 .nav-links a,
 .footer-links a,
-.social-links a {
+.social-links a,
+.social-links span {
   position: relative;
   min-height: 42px;
   display: inline-flex;
@@ -766,6 +767,34 @@ p {
   color: var(--white);
   background: transparent;
   border-color: rgba(255, 255, 255, 0.24);
+}
+
+.credential-grid {
+  display: grid;
+  gap: 1px;
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.credential-grid div {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  background: var(--black);
+}
+
+.credential-grid span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.credential-grid strong {
+  color: var(--white);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .process-grid,

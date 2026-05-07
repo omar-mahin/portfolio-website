@@ -47,91 +47,91 @@ if ("IntersectionObserver" in window) {
 }
 
 const caseStudies = {
-  checkout: {
-    title: "Checkout Growth Sprint",
-    client: "SaaS onboarding",
-    impact: "Raised checkout completion by 28% by removing uncertainty from plan comparison and payment.",
-    role: "UX strategy, UI design, testing",
-    timeline: "6 weeks",
-    metric: "+28% checkout completion",
+  mimba: {
+    title: "Mimba Smart Dairy",
+    client: "Smart dairy product",
+    impact: "Improved operational efficiency by 30% by simplifying inventory, milk production, herd health, and farm management workflows.",
+    role: "Product design, UI design, prototyping",
+    timeline: "Selected project",
+    metric: "+30% operational efficiency",
     overview:
-      "The checkout flow had enough intent but not enough confidence. I rebuilt the page hierarchy around the questions buyers asked before entering payment details: what is included, what changes after trial, and why this plan is the right fit.",
+      "Mimba is a smart dairy product where the interface had to support practical farm operations. I designed high-fidelity web and mobile app mockups for inventory tracking, milk production monitoring, herd health dashboards, and farm management.",
     problem:
-      "Analytics showed a steep drop after plan selection. Interviews and session reviews pointed to three issues: vague pricing context, weak reassurance before payment, and a support-heavy feature comparison.",
+      "Dairy teams needed fast access to operational information without digging through scattered workflows. The design challenge was to make complex farm data easier to read, monitor, and act on.",
     process: [
-      "Mapped checkout events against support tickets and sales objections.",
-      "Rewrote the decision hierarchy around value, commitment, and risk.",
-      "Tested layout variants with five target buyers before final UI design."
+      "Mapped the key dairy farm workflows and the information users needed most often.",
+      "Designed web and mobile dashboards for inventory, milk production, and herd health.",
+      "Collaborated with product and development partners to keep the solution practical and intuitive."
     ],
     solution:
-      "The final experience paired a simplified plan comparison with contextual proof, plain-language billing details, and a checkout summary that stayed visible until purchase. The UI became calmer because every block had a job.",
+      "The final direction centered on clear dashboard views, high-fidelity interaction patterns, and a simpler product structure for daily farm management. The experience made important operational signals easier to find and use.",
     results: [
-      ["+28%", "checkout completion"],
-      ["-19%", "billing support questions"],
-      ["+14%", "annual plan selection"]
+      ["+30%", "operational efficiency"],
+      ["Web", "farm management app"],
+      ["Mobile", "farm management app"]
     ],
     takeaways: [
-      "Conversion improves when the page answers the real buyer question.",
-      "Reducing interface weight is only useful when the decision logic gets clearer.",
-      "Support data can expose conversion friction faster than another design critique."
+      "Operational products need dashboards that support real daily decisions.",
+      "High-fidelity prototypes help teams align before build work gets expensive.",
+      "Good product design turns complex workflows into clear, repeatable actions."
     ]
   },
-  analytics: {
-    title: "Analytics Activation",
-    client: "B2B dashboard",
-    impact: "Improved activation by 34% by turning a dense analytics product into a guided first-use experience.",
-    role: "Product UX, prototyping, design system",
-    timeline: "8 weeks",
-    metric: "+34% activation",
+  sumo: {
+    title: "Sumo Cloud Restaurant Management",
+    client: "Restaurant management system",
+    impact: "Improved order efficiency by 21% and customer satisfaction by 65% through clearer order, delivery, and POS workflows.",
+    role: "UX/UI design, prototyping, stakeholder alignment",
+    timeline: "Selected project",
+    metric: "+65% customer satisfaction",
     overview:
-      "The product had useful data but asked new users to interpret too much too soon. I redesigned the first-run experience around role-based defaults, empty states that taught the product, and clearer paths to the first useful insight.",
+      "Sumo is a cloud restaurant management system covering order taking, delivery, and POS workflows. I designed and prototyped high-fidelity mockups to improve the experience for restaurant staff and customers.",
     problem:
-      "New users landed in a powerful dashboard with weak context. Teams skipped setup, missed high-value reports, and depended on customer success to explain what the interface should have made obvious.",
+      "Restaurant operations move quickly, and unclear flows slow down staff while creating friction for customers. The product needed an interface that made daily service work faster and easier to follow.",
     process: [
-      "Audited onboarding sessions to identify where new users paused or left.",
-      "Defined activation around the first saved report instead of first login.",
-      "Prototyped guided states and tested them with admins, analysts, and founders."
+      "Reviewed the core restaurant workflows across order taking, delivery, and POS.",
+      "Created high-fidelity screens that reduced complexity for staff-facing tasks.",
+      "Worked with stakeholders to keep the design aligned with business goals and user needs."
     ],
     solution:
-      "The redesign introduced a lighter home state, role-specific report starters, visible setup progress, and dashboard defaults that matched the user's business model. The interface focused attention without hiding power.",
+      "The design focused on practical workflow clarity: easier order handling, smoother delivery coordination, and a cleaner POS experience. The result was a more usable management product for both staff and customers.",
     results: [
-      ["+34%", "activation rate"],
-      ["-41%", "time to first insight"],
-      ["+23%", "saved report creation"]
+      ["+21%", "order efficiency"],
+      ["+65%", "customer satisfaction"],
+      ["POS", "optimized workflow"]
     ],
     takeaways: [
-      "A dashboard should not make new users prove they deserve the data.",
-      "Activation metrics get sharper when they describe a meaningful product moment.",
-      "Strong defaults can reduce onboarding work without making the product feel limited."
+      "Service products win when the interface respects real operating speed.",
+      "Customer satisfaction can improve when staff workflows become easier too.",
+      "Stakeholder alignment matters most when a product touches several roles."
     ]
   },
-  lending: {
-    title: "Lending Funnel Redesign",
-    client: "Fintech funnel",
-    impact: "Increased completed applications by 22% by making risk, rates, and next steps easier to trust.",
-    role: "UX research, funnel design, UI design",
-    timeline: "7 weeks",
-    metric: "+22% completed applications",
+  oride: {
+    title: "Oride App Ecosystem",
+    client: "Ride-sharing app",
+    impact: "Spearheaded UX/UI for a four-app ecosystem: User, Driver, Vendor, and Delivery.",
+    role: "Founding product designer, UX/UI",
+    timeline: "Selected project",
+    metric: "4 mobile apps launched",
     overview:
-      "Applicants were interested in estimated rates but uncertain about what happened next. I redesigned the quote-to-application path around transparency, document readiness, and confidence at each handoff.",
+      "Oride needed a comprehensive ride-sharing ecosystem with connected mobile experiences for different roles. As founding designer, I shaped the UX/UI foundation for the User, Driver, Vendor, and Delivery apps.",
     problem:
-      "The flow treated rate estimates as the finish line, but users saw them as the start of a risk decision. They needed to understand eligibility, documents, privacy, and commitment before continuing.",
+      "The product required multiple mobile apps that felt consistent while serving very different needs. The team also needed a design process from scratch so delivery could stay organized as the ecosystem grew.",
     process: [
-      "Reviewed drop-off by step and compared it with support and compliance questions.",
-      "Interviewed applicants who abandoned after viewing their estimate.",
-      "Reworked the quote path to explain commitment level before asking for more data."
+      "Defined the core flows for User, Driver, Vendor, and Delivery experiences.",
+      "Established a repeatable design process to improve consistency and efficiency.",
+      "Worked across product and development needs to prepare the ecosystem for launch."
     ],
     solution:
-      "The final flow added clearer rate context, a document readiness preview, plain privacy language, and trust cues near sensitive form fields. The structure stayed short while the decision felt better supported.",
+      "The final product foundation gave each app its own task-focused flow while keeping the ecosystem coherent. The design process helped the team move from idea to implementation with clearer standards.",
     results: [
-      ["+22%", "completed applications"],
-      ["-17%", "form field errors"],
-      ["+31%", "document upload starts"]
+      ["4", "mobile apps launched"],
+      ["User", "Driver, Vendor, Delivery"],
+      ["0-1", "design process created"]
     ],
     takeaways: [
-      "Trust is part of the interface, not a badge pasted near the footer.",
-      "Sensitive flows need clarity before they need persuasion.",
-      "The right explanation can reduce friction without adding more screens."
+      "Multi-role ecosystems need shared principles, not copied screens.",
+      "A design process can be as valuable as a single interface when a product is scaling.",
+      "Foundational UX work keeps complex mobile ecosystems easier to build."
     ]
   }
 };
@@ -151,9 +151,9 @@ const caseTitle = document.querySelector("[data-case-title]");
 
 if (caseTitle) {
   const params = new URLSearchParams(window.location.search);
-  const selected = caseStudies[params.get("work")] || caseStudies.checkout;
+  const selected = caseStudies[params.get("work")] || caseStudies.mimba;
 
-  document.title = `${selected.title} | Ari Morgan`;
+  document.title = `${selected.title} | Md Omar Faruque`;
   setText("[data-case-title]", selected.title);
   setText("[data-case-client]", selected.client);
   setText("[data-case-impact]", selected.impact);
@@ -201,6 +201,6 @@ if (contactForm) {
       status.textContent = "Opening your email client with the project note.";
     }
 
-    window.location.href = `mailto:hello@arimorgan.design?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:omarmahin0@gmail.com?subject=${subject}&body=${body}`;
   });
 }
