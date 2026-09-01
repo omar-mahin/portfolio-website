@@ -373,9 +373,6 @@ p {
 .portrait {
   width: 100%;
   height: auto;
-  aspect-ratio: 6 / 5;
-  object-fit: cover;
-  object-position: 50% 20%;
   background: linear-gradient(180deg, var(--soft-2) 0%, var(--soft) 78%);
 }
 
