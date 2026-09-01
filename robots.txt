@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omar-mahin.github.io/portfolio-website/sitemap.xml
+Sitemap: https://omarshowcase.netlify.app/sitemap.xml

@@ -2,7 +2,7 @@
 
 Personal portfolio for **Md Omar Faruque** — Senior Product Designer, Dhaka, Bangladesh.
 
-**Live:** https://omar-mahin.github.io/portfolio-website/
+**Live:** https://omarshowcase.netlify.app/
 
 ## Stack
 
@@ -42,4 +42,9 @@ crawlers and link previews see. Anything unrecognised in `?work=` falls back to 
 
 ## Deployment
 
-GitHub Pages serves `main` from the repository root. Pushing to `main` publishes.
+Netlify serves the repository root at https://omarshowcase.netlify.app/ — pushing to
+`main` publishes.
+
+Netlify's Pretty URLs are on, so pages are served without the `.html` extension
+(`/contact`, `/case-study?work=mimba`). Internal links are rewritten at deploy
+time; the canonical tags and `sitemap.xml` use the same extensionless form.
