@@ -140,12 +140,13 @@ button {
 .brand {
   display: inline-flex;
   flex-direction: column;
-  gap: 0;
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.brand-mark {
+  width: auto;
+  height: 21px;
 }
 
 .brand span:last-child {
@@ -374,11 +375,15 @@ p {
 .signal-board {
   position: relative;
   overflow: hidden;
-  display: none;
-  border: 1px solid var(--black);
-  border-radius: var(--radius);
-  background: var(--black);
-  color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--soft);
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, var(--soft-2) 0%, var(--soft) 78%);
 }
 
 .signal-topline,
@@ -388,15 +393,19 @@ p {
 }
 
 .signal-topline {
-  min-height: 56px;
+  min-height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.78);
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
   font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .trust-strip {
@@ -1174,12 +1183,11 @@ a:focus-visible {
 .fact-list {
   display: grid;
   margin: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .fact-list div {
-  padding: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line);
 }
 
 .fact-list div:last-child {
@@ -1187,17 +1195,18 @@ a:focus-visible {
 }
 
 .fact-list dt {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   color: var(--accent);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .fact-list dd {
   margin: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 13px;
+  color: var(--ink);
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -1381,9 +1390,6 @@ a:focus-visible {
     align-self: center;
   }
 
-  .signal-board {
-    display: block;
-  }
 
   .trust-grid {
     grid-template-columns: repeat(4, 1fr);
