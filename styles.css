@@ -281,9 +281,9 @@ h3 {
 }
 
 h1 {
-  max-width: 15ch;
+  max-width: 17ch;
   margin-bottom: 22px;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -1302,7 +1302,7 @@ a:focus-visible {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
@@ -1312,7 +1312,7 @@ a:focus-visible {
   }
 
   h1 {
-    font-size: 76px;
+    font-size: 58px;
   }
 
   h2 {
@@ -1466,7 +1466,7 @@ a:focus-visible {
 
 @media (min-width: 1040px) {
   h1 {
-    font-size: 96px;
+    font-size: 72px;
   }
 
   h2 {
