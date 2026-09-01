@@ -420,6 +420,41 @@ p {
   text-transform: uppercase;
 }
 
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 26px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo-row img {
+  display: block;
+  width: auto;
+  opacity: 0.76;
+}
+
+.logo-elx {
+  height: 12px;
+}
+
+.logo-uss {
+  height: 17px;
+}
+
+.logo-fpg {
+  height: 32px;
+}
+
+/* Finer strokes than the rest, so it needs a little more size and weight
+   to sit at the same optical level. */
+.logo-ctk {
+  height: 28px;
+  opacity: 0.95;
+}
+
 .trust-strip {
   border-block: 1px solid var(--line);
   background: var(--soft);
