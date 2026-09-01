@@ -199,9 +199,7 @@ button {
 }
 
 .nav-links a,
-.footer-links a,
-.social-links a,
-.social-links span {
+.footer-links a {
   position: relative;
   min-height: 42px;
   display: inline-flex;
@@ -217,14 +215,12 @@ button {
 
 .nav-links a:hover,
 .footer-links a:hover,
-.social-links a:hover,
 .nav-links a[aria-current="page"] {
   color: var(--black);
 }
 
 .nav-links a::after,
 .footer-links a::after,
-.social-links a::after,
 .text-link::after,
 .back-link::after {
   content: "";
@@ -241,7 +237,6 @@ button {
 
 .nav-links a:hover::after,
 .footer-links a:hover::after,
-.social-links a:hover::after,
 .text-link:hover::after,
 .back-link:hover::after {
   transform: scaleX(1);
@@ -906,7 +901,31 @@ p {
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px 20px;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.social-links a:hover {
+  color: var(--white);
+  border-color: var(--black);
+  background: var(--black);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
 }
 
 .copyright {
