@@ -48,6 +48,9 @@ if ("IntersectionObserver" in window) {
 
 const caseStudies = {
   mimba: {
+    links: [
+      ["Open in Figma", "https://www.figma.com/design/SdHv4DPoptVmwilCQqC9G5/MIMBA-Redesign?m=auto&t=3VMGWZZxsRUWzMv9-6"]
+    ],
     title: "Mimba Smart Dairy",
     client: "Smart dairy product",
     impact: "Improved operational efficiency by 30% by simplifying inventory, milk production, herd health, and farm management workflows.",
@@ -77,6 +80,10 @@ const caseStudies = {
     ]
   },
   sumo: {
+    links: [
+      ["Open in Figma", "https://www.figma.com/design/eFVkKRA64gOE8355BxIgT2/SUMO--Restaurant-Management-System?m=auto&t=3VMGWZZxsRUWzMv9-6"],
+      ["Style guide", "https://www.figma.com/design/XGqCnlhwkibeddAidSZUm7/Sumo---Style-Guide?m=auto&t=3VMGWZZxsRUWzMv9-6"]
+    ],
     title: "Sumo Cloud Restaurant Management",
     client: "Restaurant management system",
     impact: "Improved order efficiency by 21% and customer satisfaction by 65% through clearer order, delivery, and POS workflows.",
@@ -171,6 +178,10 @@ if (caseTitle) {
 
   renderList("[data-case-results]", selected.results, ([metric, label]) => {
     return `<div><strong>${metric}</strong><span>${label}</span></div>`;
+  });
+
+  renderList("[data-case-links]", selected.links, ([label, href]) => {
+    return `<a class="text-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
   });
 
   renderList("[data-case-takeaways]", selected.takeaways, (item) => {
