@@ -251,7 +251,7 @@ button {
   display: grid;
   gap: 44px;
   min-height: 0;
-  align-items: center;
+  align-items: start;
 }
 
 .eyebrow {
@@ -373,6 +373,9 @@ p {
 .portrait {
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 50% 6%;
   background: linear-gradient(180deg, var(--soft-2) 0%, var(--soft) 78%);
 }
 
@@ -400,6 +403,20 @@ p {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-clients {
+  margin-top: 36px;
+}
+
+.hero-clients > span {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -1181,7 +1198,7 @@ a:focus-visible {
 }
 
 .fact-list div {
-  padding: 15px 18px;
+  padding: 13px 18px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -1340,7 +1357,7 @@ a:focus-visible {
 
 @media (min-width: 780px) {
   .section-pad {
-    padding-top: 118px;
+    padding-top: 96px;
     padding-bottom: 84px;
   }
 
@@ -1378,11 +1395,6 @@ a:focus-visible {
 
   .hero {
     grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
-    min-height: calc(100svh - 150px);
-  }
-
-  .hero-copy {
-    align-self: center;
   }
 
 
