@@ -779,13 +779,42 @@ p {
 
 .final-cta,
 .next-project {
+  position: relative;
+  overflow: hidden;
   display: grid;
-  gap: 24px;
+  gap: 26px;
+  margin-top: 72px;
   margin-bottom: 72px;
-  padding: 28px;
+  padding: 34px 28px;
   color: var(--white);
-  background: var(--black);
-  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background:
+    radial-gradient(120% 150% at 6% -10%, rgba(99, 102, 241, 0.55) 0%, rgba(99, 102, 241, 0) 55%),
+    radial-gradient(90% 130% at 100% 108%, rgba(167, 139, 250, 0.34) 0%, rgba(167, 139, 250, 0) 60%),
+    linear-gradient(140deg, #1c1c30 0%, #101014 62%);
+}
+
+/* A light sweep along the top edge, so the card reads as lit rather than flat. */
+.final-cta::before,
+.next-project::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.38) 32%,
+    rgba(255, 255, 255, 0.38) 68%,
+    transparent
+  );
+}
+
+.final-cta > *,
+.next-project > * {
+  position: relative;
+  z-index: 1;
 }
 
 .final-cta h2,
@@ -807,10 +836,6 @@ p {
   color: var(--white);
   background: var(--accent);
   border-color: var(--accent);
-}
-
-.final-cta .text-link {
-  color: var(--white);
 }
 
 .site-footer {
@@ -1392,7 +1417,8 @@ a:focus-visible {
   .next-project {
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 36px;
+    margin-top: 96px;
+    padding: 48px 44px;
   }
 
   .footer-grid {
