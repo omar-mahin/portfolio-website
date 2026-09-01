@@ -1162,7 +1162,8 @@ a:focus-visible {
   list-style: none;
 }
 
-.file-grid a {
+.file-grid a,
+.file-grid .file-locked {
   display: grid;
   gap: 6px;
   align-content: center;
@@ -1187,6 +1188,10 @@ a:focus-visible {
 .file-grid span {
   color: var(--muted);
   font-size: 13px;
+}
+
+.file-grid .file-locked {
+  background: var(--soft);
 }
 
 .file-grid a::after {
