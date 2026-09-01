@@ -377,6 +377,10 @@ p {
 }
 
 .signal-topline,
+.signal-topline span {
+  white-space: nowrap;
+}
+
 .fact-list {
   position: relative;
   z-index: 1;
@@ -387,14 +391,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 14px 18px;
+  gap: 4px 12px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   color: var(--muted);
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
