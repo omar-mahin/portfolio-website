@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Md Omar Faruque">
-  <rect width="64" height="64" rx="8" fill="#090909"/>
-  <circle cx="30" cy="34" r="15" fill="none" stroke="#ffffff" stroke-width="7"/>
-  <circle cx="50" cy="14" r="7" fill="#3b82f6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Omar">
+  <rect width="64" height="64" rx="14" fill="#101014"/>
+  <g transform="translate(11.00 10.48) scale(0.3500)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M114 61.4836C114 91.8593 88.4802 116.484 57 116.484C25.5198 116.484 0 91.8593 0 61.4836C0 31.108 25.5198 6.48364 57 6.48364C64.5609 6.48364 71.778 7.90414 78.3803 10.4836H120V27.4836H101.807C109.444 36.841 114 48.6489 114 61.4836ZM95 61.4836C95 81.9182 77.9868 98.4836 57 98.4836C36.0132 98.4836 19 81.9182 19 61.4836C19 41.0491 36.0132 24.4836 57 24.4836C77.9868 24.4836 95 41.0491 95 61.4836Z" fill="#ffffff"/>
+  </g>
 </svg>
