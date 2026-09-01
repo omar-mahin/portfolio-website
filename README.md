@@ -11,12 +11,16 @@ open `index.html` in a browser and it runs.
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Home: hero, selected work, about, process, proof |
+| `index.html` | Home: hero, selected work, design files, experience, skills |
 | `case-study.html` | Case study template, filled at runtime from `?work=` |
 | `contact.html` | Contact form (opens the visitor's mail client) |
 | `script.js` | Nav, scroll reveals, case-study content, form handler |
 | `styles.css` | All styles, mobile-first, design tokens in `:root` |
 | `og-image.png` | Social share card (1200x630) |
+| `logo-color.svg` | Wordmark used in the header and footer |
+| `logo-black.svg` | Flat wordmark, unused but kept for dark grounds |
+| `portrait.webp` | Hero portrait |
+| `logo-*.svg`, `logo-*.webp` | Employer marks in the hero strip |
 
 ## Running it locally
 
