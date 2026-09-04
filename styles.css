@@ -1331,16 +1331,13 @@ a:focus-visible {
   display: grid;
   gap: 10px;
   margin: 0;
-  padding-left: 18px;
+  padding: 0;
+  list-style: none;
 }
 
 .role-points li {
   color: var(--muted);
   font-size: 14px;
-}
-
-.role-points li::marker {
-  color: var(--accent);
 }
 
 .credential-grid .text-link {
@@ -1447,7 +1444,6 @@ a:focus-visible {
   .hero {
     grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
   }
-
 
   .trust-grid {
     grid-template-columns: repeat(4, 1fr);
