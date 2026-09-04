@@ -1536,10 +1536,13 @@ a:focus-visible {
     padding: 22px 24px;
   }
 
-  /* Position, employer and tenure read as one line once there is room. */
+  /* Position, employer and tenure read as one line once there is room.
+     The date column is fixed rather than auto: tenure strings differ in
+     length, and with auto each card sized its own columns, so the employer
+     never lined up from row to row. */
   .role-head {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) 200px;
     align-items: baseline;
     gap: 8px 26px;
   }
