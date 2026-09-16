@@ -112,6 +112,55 @@ const caseStudies = {
       "Stakeholder alignment matters most when a product touches several roles."
     ]
   },
+  amex: {
+    title: "Amex Member Verification",
+    client: "American Express \u2014 unofficial concept",
+    impact:
+      "A redesign of the member verification flow. National ID, a live photo and an NFC chip read, rebuilt so people always know which step they are on, what the camera wants, and why the data is needed.",
+    role: "Product designer \u2014 audit, UX, UI, prototype-ready screens",
+    timeline: "Design task",
+    metric: "21 screens \u2192 3 steps",
+    note:
+      "Unofficial concept for a design task. Not affiliated with, endorsed by, or commissioned by American Express. Brand assets belong to their owner.",
+    overview:
+      "The brief was to streamline a member verification process that submits a National ID, a personal photo and an NFC-based chip read. I audited the existing 21 screens, mapped the three verification paths through them, and rebuilt the journey as three visible steps on iOS.",
+    problem:
+      "People do not abandon verification because it is hard. They abandon it because they cannot tell how long it will take. The original flow gave no sense of position, the camera asked for documents without explaining what a good capture looked like, and nothing said why any of the data was needed.",
+    process: [
+      "Audited all 21 original screens and mapped the three verification paths through them.",
+      "Rewrote the flow as three visible steps, with one job per screen.",
+      "Designed a camera experience that coaches through the capture instead of waiting for a result.",
+      "Rebuilt the hub as a progress view with four real states."
+    ],
+  solution:
+      "Every screen carries a step indicator, so position in the flow is never in question. Instructions and buttons are rewritten in plain language, the capture states tell people what to correct, and the hub reports real progress rather than a single pending state. Sample ID images are blurred so no document data is readable.",
+    results: [
+      ["21 \u2192 3", "screens rebuilt as visible steps"],
+      ["20", "screens delivered"],
+      ["4", "hub states"]
+    ],
+    takeaways: [
+      "Telling someone where they are in a flow is cheaper than making any single screen easier.",
+      "A camera that coaches during capture prevents the retries a camera that only validates afterwards creates.",
+      "Explaining why data is needed belongs next to the request, not in a policy page."
+    ],
+    deck: [
+      ["case-amex/01.webp", "Cover details", 1114],
+      ["case-amex/02.webp", "Overview", 1028],
+      ["case-amex/03.webp", "The starting point", 1474],
+      ["case-amex/04.webp", "Research plan", 1068],
+      ["case-amex/05.webp", "Desk research", 1406],
+      ["case-amex/06.webp", "What people said", 1480],
+      ["case-amex/07.webp", "Who it is for", 1224],
+      ["case-amex/08.webp", "Problem and principles", 1147],
+      ["case-amex/09.webp", "Structure and flows", 1967],
+      ["case-amex/10.webp", "Explorations", 1276],
+      ["case-amex/11.webp", "Key decisions", 2104],
+      ["case-amex/12.webp", "The system", 1492],
+      ["case-amex/13.webp", "Final screens", 1807],
+      ["case-amex/14.webp", "Accessibility, next steps, reflection", 1776]
+    ]
+  },
   oride: {
     title: "Oride App Ecosystem",
     client: "Ride-sharing app",
@@ -183,6 +232,24 @@ if (caseTitle) {
   renderList("[data-case-links]", selected.links, ([label, href]) => {
     return `<a class="text-link" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
   });
+
+  const note = document.querySelector("[data-case-note]");
+  if (note && selected.note) {
+    note.textContent = selected.note;
+    note.hidden = false;
+  }
+
+  const deck = document.querySelector("[data-case-deck]");
+  if (deck && selected.deck) {
+    deck.hidden = false;
+    // The placeholder graphic is a stand-in for work we do not have; when the
+    // real screens exist, it should not sit above them.
+    const placeholder = document.querySelector(".case-visual-shell");
+    if (placeholder) placeholder.hidden = true;
+    renderList("[data-case-deck]", selected.deck, ([src, label, height]) => {
+      return `<figure><img src="${src}" alt="${label}" width="1440" height="${height}" loading="lazy" decoding="async"><figcaption>${label}</figcaption></figure>`;
+    });
+  }
 
   renderList("[data-case-takeaways]", selected.takeaways, (item) => {
     return `<li>${item}</li>`;
